@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_review"
+    android:background="@drawable/bgmain5">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/logo"
+            android:clickable="true"
+            android:src="@drawable/arrow"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contentReview"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/trailer"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="414dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginLeft="27dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="25dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/batmanrev">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/contentbatman"
+            android:layout_below="@id/trailer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginLeft="27dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="25dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:src="@drawable/author"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/moviese7en"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Batman"
+                    android:fontFamily="@font/fontfont"
+                    android:textColor="@color/bitwhite"
+                    android:textSize="32dp"
+                    android:elevation="25dp"/>
+
+                <TextView
+                    android:id="@+id/authorname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/moviese7en"
+                    android:elevation="25dp"
+                    android:fontFamily="serif"
+                    android:text="Written by Walter White"
+                    android:textColor="@color/bitwhite"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/descse7en"
+                    android:layout_below="@id/authorname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:elevation="25dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non laoreet felis. Nullam bibendum lobortis tellus. Sed at nisi faucibus ipsum congue laoreet. Pellentesque dolor augue, ultricies vitae euismod sed, varius nec lectus. Vestibulum eu."
+                    android:textColor="@color/bitwhite"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/lanjutan"
+            android:layout_below="@id/contentbatman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginLeft="27dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis, purus eu gravida gravida, erat magna feugiat turpis, ac volutpat dolor ante eu metus. Phasellus at dapibus nisi. Nullam dapibus, lectus dapibus fringilla maximus, ex erat tincidunt dolor, a blandit sem purus sit amet lorem. Maecenas maximus, eros sit amet hendrerit molestie, tellus tellus cursus justo, mattis vehicula felis nisl nec velit. Suspendisse sit amet finibus tellus. Aliquam venenatis lorem ac mollis dapibus. Fusce lobortis odio eget ornare mollis. Mauris eget urna risus.
+Aenean vulputate dictum mi. Integer aliquam nisl eget lacus pulvinar, nec rutrum ligula blandit. Morbi quis malesuada ante."
+                android:textColor="@color/bitwhite"
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
+        </RelativeLayout>
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_below="@id/lanjutan"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/RatingBar"
+            android:numStars="5"
+            android:layout_marginTop="20dp"
+            android:rating="4.5"
+            android:stepSize="75"/>
+    </RelativeLayout>
+</RelativeLayout>

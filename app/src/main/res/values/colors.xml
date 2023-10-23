@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bitwhite">#DCDCDC</color>
+    <color name="colorAccent">#8C8C8C</color>
+    <color name="colorPrimary">#FFEB3B</color>
+    <color name="gold">#E3AC05</color>
+    <color name="mataram">#9E20F8</color>
+
+</resources>

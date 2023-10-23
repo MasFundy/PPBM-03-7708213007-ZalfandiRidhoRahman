@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_login"
+    android:background="@drawable/bgmain2">
+
+
+
+    <ImageView
+        android:id="@+id/backtochoose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:src="@drawable/arrow"
+
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/brush"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/brush"/>
+
+    <ImageView
+        android:id="@+id/judlog"
+        android:layout_below="@id/brush"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"/>
+
+
+    <EditText
+        android:id="@+id/enteruser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/judlog"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/lonjong"
+        android:paddingLeft="20dp"
+        android:hint="Input Username"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/enterpw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/enteruser"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/lonjong"
+        android:hint="Input Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_below="@id/enterpw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:text="Login"
+        android:textAlignment="center"
+        android:fontFamily="@font/fontfont"
+        android:textSize="20sp"
+
+        />
+
+
+
+
+
+</RelativeLayout>

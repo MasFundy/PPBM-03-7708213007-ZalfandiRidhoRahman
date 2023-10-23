@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_profile"
+    android:background="@drawable/bgmain4">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:src="@drawable/arrow"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_toRightOf="@id/back"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/circlepic"
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/devhalu"
+            app:civ_border_width="5dp"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="@color/gold"/>
+
+        <TextView
+            android:id="@+id/profilename"
+            android:layout_below="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="Zalfandi R"
+            android:fontFamily="@font/fontfont"
+            android:textColor="@color/bitwhite"
+            android:textSize="36dp"/>
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/isiprof"
+        android:layout_below="@id/circlepic"
+        app:cardCornerRadius="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/wt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gontserrat"
+                android:textSize="24sp"
+                android:text="Watch Time :"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/acttime"
+                android:layout_below="@id/wt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/creato"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:text="3d 14h 43s"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/favwrd"
+                android:layout_below="@id/acttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gontserrat"
+                android:textSize="28sp"
+                android:layout_centerHorizontal="true"
+                android:text="Favourite Movie"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_below="@id/favwrd"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="414dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="27dp"
+                android:layout_marginLeft="27dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="25dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/batman">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="23dp"
+                    android:text="The Batman"
+                    android:fontFamily="@font/fontfont"
+                    android:textColor="@color/bitwhite"
+                    android:textSize="36dp">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_below="@id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gontserrat"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true"
+                android:text="User Description"/>
+            <TextView
+                android:id="@+id/descact"
+                android:layout_below="@id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/creato"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:justificationMode="inter_word"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla erat sit amet justo accumsan aliquet. Sed non feugiat nunc. Etiam ac ante id neque lobortis pretium quis ac tellus. Nulla consectetur nunc mi, vitae vehicula ipsum pretium et. Fusce accumsan purus eu lorem feugiat, sit amet eleifend felis pulvinar. Pellentesque lobortis scelerisque diam ac consequat. Aliquam maximus diam elit, a fermentum felis hendrerit id. Nullam nec odio sed turpis facilisis facilisis non in augue. Aenean fermentum dui id felis mollis euismod. Curabitur mattis urna ut elit hendrerit porttitor. Etiam accumsan libero ac faucibus bibendum. Suspendisse ut mattis urna. Nunc ut scelerisque sem.
+
+Mauris odio erat, rutrum quis malesuada vitae, posuere et sem. Suspendisse hendrerit turpis ac consectetur egestas. Duis id arcu in arcu feugiat lacinia. Aenean a turpis tristique, aliquet libero non, convallis urna. Mauris in euismod ligula. In cursus tincidunt urna vel laoreet. Donec consectetur mauris ex, eget tristique dui mattis nec. Sed ut mi eros. Nulla consequat elit quis consequat tincidunt. Suspendisse tincidunt convallis lorem, ac molestie dui accumsan ut. Aenean blandit eros ac purus placerat mattis."/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

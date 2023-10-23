@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_login"
+    android:background="@drawable/bgmain2">
+
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:src="@drawable/arrow"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_toRightOf="@id/back"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/submitan"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+
+        <TextView
+            android:id="@+id/movtit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie Title"
+            android:textSize="32dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fontfont"/>
+
+        <EditText
+            android:id="@+id/enteruser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/movtit"
+
+            android:background="@drawable/lonjong"
+            android:paddingLeft="20dp"
+            android:hint="Input Movie Title"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/reldat"
+            android:layout_below="@id/enteruser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Release Date"
+            android:textSize="32dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fontfont"/>
+
+        <EditText
+            android:id="@+id/enterpw"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/reldat"
+            android:paddingLeft="20dp"
+            android:background="@drawable/lonjong"
+            android:hint="Input Release Date"
+            android:inputType="date"/>
+
+        <TextView
+            android:id="@+id/rev"
+            android:layout_below="@id/enterpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:textSize="32dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fontfont"/>
+
+        <EditText
+            android:id="@+id/enterrev"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_below="@id/rev"
+            android:paddingLeft="20dp"
+            android:background="@drawable/lonjong"
+            android:hint="Write Your Review Here"
+            android:inputType="textAutoCorrect"/>
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_below="@id/enterrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:textSize="32dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fontfont"/>
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_below="@id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/RatingBar"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="75"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_below="@id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Submit Review"
+            android:textAlignment="center"
+            android:fontFamily="@font/fontfont"
+            android:textSize="20sp"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

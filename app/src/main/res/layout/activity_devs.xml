@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_review"
+    android:background="@drawable/bgmain5">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/logo"
+            android:clickable="true"
+            android:src="@drawable/arrow"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contentReview"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/updev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Developer"
+            android:fontFamily="@font/fontfont"
+            android:textColor="@color/bitwhite"
+            android:layout_centerHorizontal="true"
+            android:textSize="32dp"
+            android:elevation="25dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/trailer"
+            android:layout_below="@id/updev"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="414dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginLeft="27dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="25dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/devhalu">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/contentbatman"
+            android:layout_below="@id/trailer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginLeft="27dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="25dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:src="@drawable/dev"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/moviese7en"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zalfandi Ridho \nRahman"
+                    android:fontFamily="@font/fontfont"
+                    android:textColor="@color/bitwhite"
+                    android:textSize="32dp"
+                    android:elevation="25dp"/>
+
+                <TextView
+                    android:id="@+id/authorname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/moviese7en"
+                    android:elevation="25dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/gilgan"
+                    android:text="Developer of \nFlash Reviews by MasFundy \n\n7708213007\nD4 Teknologi Rekayasa Multimedia\nTelkom University"
+                    android:textColor="@color/bitwhite"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/lanjutan"
+            android:layout_below="@id/contentbatman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginLeft="27dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lgc"
+                android:justificationMode="inter_word"
+                android:text="The purpose of this application is to fulfill the Firs Assignment of Mobile Programming class led by Mr. Galih. This Application has a theme of movies. I love movies since I was a kid, and I will always recommend movies that I like to someone else. I realized that it's not just me who have this kind of hobby, there are a lot of them. So why not create a platform that can give your review on some movies and also watch other peoples review of some movies you want to see. That way we can build a greater cinephile community."
+                android:textColor="@color/bitwhite"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
