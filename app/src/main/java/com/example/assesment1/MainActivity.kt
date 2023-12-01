@@ -83,6 +83,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intmain)
         }
 
+        val otwLists = findViewById<RelativeLayout>(R.id.listmov)
+        otwLists.setOnClickListener {
+            val intmain =
+                Intent(this, activity_listview::class.java)
+            startActivity(intmain)
+        }
+
 
 
     }

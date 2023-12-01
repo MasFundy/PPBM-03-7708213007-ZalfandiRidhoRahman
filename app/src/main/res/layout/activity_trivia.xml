@@ -112,7 +112,7 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="La La Land (2016)"
+                            android:text="La la Land (2016)"
                             android:textSize="15sp" />
                     </RadioGroup>
                 </RelativeLayout>
