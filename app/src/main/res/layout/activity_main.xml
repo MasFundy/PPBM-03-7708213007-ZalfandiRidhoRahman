@@ -68,13 +68,27 @@
                 android:textColor="@color/bitwhite"
                 android:textSize="36dp">
             </TextView>
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/imageser"
+                android:layout_below="@id/hottakes"
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_marginRight="27dp"
+                android:layout_marginLeft="27dp"
+                app:iss_corner_radius="60"
+                app:iss_auto_cycle="true"
+                app:iss_period="3000"
+                app:iss_delay="1000"
+                app:iss_text_align="CENTER"/>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/card"
-                android:layout_below="@id/hottakes"
+                android:layout_below="@id/imageser"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="414dp"
                 android:layout_height="190dp"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="27dp"
                 android:layout_marginLeft="27dp"
                 app:cardCornerRadius="25dp"
@@ -526,7 +540,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:fontFamily="@font/fontfont"
-                    android:textColor="@color/bitwhite"
+                    android:textColor="@color/white"
                     />
 
             </RelativeLayout>
@@ -551,14 +565,39 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:fontFamily="@font/fontfont"
-                    android:textColor="@color/bitwhite"
+                    android:textColor="@color/white"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rattab"
+                android:layout_below="@+id/triv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/ratingan"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:text="Check out these 3🌟 Movies \nClick Here"
+                    android:textSize="24dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/fontfont"
+                    android:textColor="@color/white"
                     />
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/listmov"
-                android:layout_below="@+id/triv"
+                android:layout_below="@+id/rattab"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="15dp"
@@ -576,7 +615,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:fontFamily="@font/fontfont"
-                    android:textColor="@color/bitwhite"
+                    android:textColor="@color/white"
                     />
 
             </RelativeLayout>

@@ -10,6 +10,8 @@ import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.Spinner
 import androidx.cardview.widget.CardView
+import com.denzcoskun.imageslider.ImageSlider
+import com.denzcoskun.imageslider.models.SlideModel
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -89,6 +91,27 @@ class MainActivity : AppCompatActivity() {
                 Intent(this, activity_listview::class.java)
             startActivity(intmain)
         }
+
+        val otwRate = findViewById<RelativeLayout>(R.id.rattab)
+        otwRate.setOnClickListener {
+            val intmain =
+                Intent(this, ratingtab::class.java)
+            startActivity(intmain)
+        }
+
+        val imageList = ArrayList<SlideModel>() // Create image list
+
+// imageList.add(SlideModel("String Url" or R.drawable)
+// imageList.add(SlideModel("String Url" or R.drawable, "title") You can add title
+
+        imageList.add(SlideModel(R.drawable.bubgump, "Life is like a box of chocolate..."))
+        imageList.add(SlideModel(R.drawable.getout, "Run..."))
+        imageList.add(SlideModel(R.drawable.batmanrev, "Fear is a tool..."))
+        imageList.add(SlideModel(R.drawable.devhalu, "Aamiin Ya Allah..."))
+        imageList.add(SlideModel(R.drawable.miposta, "Dun Dun, Dun Dun, Dun Dun ..."))
+
+        val imageSlider = findViewById<ImageSlider>(R.id.imageser)
+        imageSlider.setImageList(imageList)
 
 
 

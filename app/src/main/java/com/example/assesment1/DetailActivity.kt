@@ -1,5 +1,6 @@
 package com.example.assesment1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -23,5 +24,12 @@ class DetailActivity : AppCompatActivity() {
         namaTextView.text = nama
         descTextView.text = desc
         fotoImageView.setImageResource(fotoResId)
+
+        val imageBack = findViewById<ImageView>(R.id.back)
+        imageBack.setOnClickListener {
+            val intpindah =
+                Intent(this, activity_listview::class.java)
+            startActivity(intpindah)
+        }
         }
 }

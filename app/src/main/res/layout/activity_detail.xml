@@ -3,19 +3,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
     android:paddingTop="16dp"
-    android:paddingRight="16dp"
     android:paddingBottom="16dp"
     tools:context=".DetailActivity"
     android:background="@drawable/bgmain2">
 
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="ExtraText"
+        >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/logo"
+            android:clickable="true"
+            android:src="@drawable/arrow"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
+
     <ImageView
         android:id="@+id/fotoImageView"
+        android:layout_below="@id/header"
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/se7en" />
+        android:src="@drawable/se7en"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+
 
     <TextView
         android:id="@+id/namaTextView"
@@ -28,7 +57,9 @@
         android:text=""
         android:textSize="28sp"
         android:textStyle="bold"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
 
     <TextView
         android:id="@+id/descTextView"
@@ -41,6 +72,8 @@
         android:elevation="25dp"
         android:text=""
         android:textSize="16sp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
 
 </RelativeLayout>

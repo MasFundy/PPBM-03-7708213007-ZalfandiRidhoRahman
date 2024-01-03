@@ -132,16 +132,18 @@
             android:rating="0"
             android:stepSize="75"/>
 
-        <Button
-            android:id="@+id/submit"
+        <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/submitt"
             android:layout_below="@id/rating"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:layout_marginTop="20dp"
-            android:gravity="center_horizontal"
+            android:gravity="center_vertical"
             android:text="Submit Review"
+            app:text="Slide to submit"
+            app:text_appearance="@font/fontfont"
             android:textAlignment="center"
             android:fontFamily="@font/fontfont"
             android:textSize="20sp"

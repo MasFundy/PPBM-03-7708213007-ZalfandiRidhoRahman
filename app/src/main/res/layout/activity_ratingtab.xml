@@ -1,0 +1,58 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain4"
+    tools:context=".ratingtab">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="ExtraText"
+        >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/logo"
+            android:clickable="true"
+            android:src="@drawable/arrow"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:background="@drawable/tombolan"
+        android:id="@+id/tabLayout"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        style="@style/Widget.Design.TabLayout"
+        app:tabTextColor="@color/white"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:contentDescription="@string/tab_layout_description" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout"
+        android:contentDescription="@string/view_pager_description" />
+
+</RelativeLayout>
